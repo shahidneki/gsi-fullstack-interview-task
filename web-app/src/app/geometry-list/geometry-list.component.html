@@ -1,0 +1,22 @@
+<!-- src/app/geometry-list/geometry-list.component.html -->
+<!-- TODO: Need to add hard coded values into translation files -->
+<div class="geometry-list">
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">Country</th>
+      </tr>
+    </thead>
+    <tr class="table-row" *ngFor="let geometry of geometries" (click)="openGeometryModal(geometry)">
+      <td>{{ geometry.address }}</td>
+      <td>{{ geometry.city }}</td>
+      <td>{{ geometry.country }}</td>
+    </tr>
+  </table>
+  <div class="add-new-button">
+    <!-- TODO: implement add new click handler and then remove disabled property -->
+    <button type="button" disabled>Add New</button>
+  </div>
+</div>

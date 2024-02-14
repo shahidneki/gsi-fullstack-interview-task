@@ -1,0 +1,22 @@
+.geometry-modal {
+  max-height: unset;
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  form hr {
+    display: none;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    
+    button {
+      margin-left: 5px;
+    }
+  }
+}

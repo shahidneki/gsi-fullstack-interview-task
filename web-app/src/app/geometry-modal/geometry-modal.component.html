@@ -1,0 +1,34 @@
+<!-- geometry-modal.component.html -->
+<mat-dialog-content class="geometry-modal">
+  <form [formGroup]="geometryForm">
+    <mat-form-field>
+      <input matInput formControlName="address" placeholder="Address">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="city" placeholder="City">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="country" placeholder="Country">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="roof_material" placeholder="Roof Material">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="roof_type" placeholder="Roof Type">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="area" placeholder="Area">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="storeys" placeholder="Storeys">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="height" placeholder="Height">
+    </mat-form-field>
+
+    <div class="modal-buttons">
+      <button mat-raised-button color="warn" (click)="deleteGeometry()">Delete</button>
+      <button mat-raised-button color="primary" (click)="updateGeometry()">Update</button>
+    </div>
+  </form>
+</mat-dialog-content>
